@@ -29,7 +29,7 @@
     ```
     "devDependencies": {
         ...
-        "picup": "file:directory/to/local/picup/package/",
+        "picup": "picup@latest",
         ...
     },
     ```
