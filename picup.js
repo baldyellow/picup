@@ -569,14 +569,9 @@
 			var hash = parseInt('001010100000101', 2);
 			var i = input.length - 1;
 
-			if (typeof input === 'string') {
-				for (; i > -1; i--) {
-					hash += hash << 5 + input.charCodeAt(i);
-				}
-			} else {
-				for (; i > -1; i--) {
-					hash += hash << 5 + input[i];
-				}
+			var isInputString = typeof input === 'string';
+			for (; i > -1; i--) {
+				hash += hash << 5 + (isInputString ? input.charCodeAt(i) : input[i]);
 			}
 
 			var value = hash & (Math.pow(2, 31) - 1);
