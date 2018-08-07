@@ -13,31 +13,10 @@
     ```
 
 - with Vue.js
-
-    local picup package.json
-
-    ```
-    {
-        "name": "picup",
-        "main": "path/to/picup.js",
-        ...
-    }
-    ```
-
-    vue package.json
+    install picup package
 
     ```
-    "devDependencies": {
-        ...
-        "picup": "picup@latest",
-        ...
-    },
-    ```
-
-    install local picup package
-
-    ```
-    npm install
+    npm install --save-dev picup
     ```
 
     your_page.vue
